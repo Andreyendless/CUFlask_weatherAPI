@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather forecast</title>
+</head>
+<body>
+    <form method="POST">
+        <h1>Weather forecast for the route</h1>
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+
+        <label for="start_city">Start city:</label>
+        <input type="text" id="start_city" name="start_city" required>
+
+        <label for="end_city">End city:</label>
+        <input type="text" id="end_city" name="end_city" required>
+
+        <button type="submit">get a forecast</button>
+    </form>
+</body>
+</html>

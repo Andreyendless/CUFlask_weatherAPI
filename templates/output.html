@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather forecast</title>
+</head>
+<body>
+    <div class="result">
+        <h1>Weather forecast for the route</h1>
+
+        <h2>Start city:</h2>
+        <p>Forecast: {{ start_condition }}</p>
+        <p>Weather description: {{ start_condition_text }}</p>
+
+        <h2>End city:</h2>
+        <p>Forecast: {{ end_condition }}</p>
+        <p>Weather description: {{ end_condition_text }}</p>
+
+        <a href="/">Назад</a>
+    </div>
+</body>
+</html>
